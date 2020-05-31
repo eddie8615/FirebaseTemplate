@@ -2,17 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:title="Share"
-        android:id="@+id/share"/>
-
-    <item
-        android:title="About"
-        android:id="@+id/about"
-        />
-    <item
-        android:title="로그아웃"
-        android:id="@+id/exit"/>
 
     <item
         android:title="Search"
@@ -24,5 +13,9 @@
         android:id="@+id/setting"
         android:icon="@drawable/ic_settings"
         app:showAsAction="always"/>
-
+    <item
+        android:title="로그아웃"
+        android:icon="@drawable/ic_power_settings"
+        android:id="@+id/exit"
+        app:showAsAction="always"/>
 </menu>

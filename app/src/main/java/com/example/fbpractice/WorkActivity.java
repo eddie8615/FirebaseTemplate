@@ -93,13 +93,7 @@ public class WorkActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-        if(id == R.id.share){
-            Toast.makeText(getApplicationContext(), "you click share", Toast.LENGTH_SHORT).show();
-        }
-        else if(id == R.id.about){
-            Toast.makeText(getApplicationContext(), "you click about", Toast.LENGTH_SHORT).show();
-        }
-        else if(id == R.id.exit){
+        if(id == R.id.exit){
             setLoggedIn(auth.getCurrentUser().getEmail());
             auth.signOut();
             startActivity(new Intent(WorkActivity.this, AuthActivity.class));
