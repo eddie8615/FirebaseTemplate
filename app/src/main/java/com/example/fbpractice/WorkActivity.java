@@ -1,19 +1,17 @@
 package com.example.fbpractice;
 
-import android.app.ActivityManager;
-import android.app.ActivityOptions;
 import android.content.Intent;
-import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import com.example.fbpractice.fragments.AccountFragment;
+import com.example.fbpractice.fragments.DashboardFragment;
+import com.example.fbpractice.fragments.NotifFragment;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -29,7 +27,7 @@ public class WorkActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private FirebaseAuth auth;
     private FirebaseFirestore db;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

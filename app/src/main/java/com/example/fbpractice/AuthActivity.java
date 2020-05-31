@@ -50,15 +50,8 @@ public class AuthActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-//                String txtUsername = email.getText().toString();
-//                String txtPassword = password.getText().toString();
                 Intent intent = new Intent(AuthActivity.this, RegisterActivity.class);
                 startActivity(intent);
-//                if(checkValidation(txtUsername, txtPassword)){
-//                    registerUser(txtUsername, txtPassword);
-//
-//                }
-
             }
         });
 
